@@ -1,11 +1,32 @@
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+.btn-default {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-default:hover {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #212529;
+}
+
+.btn-lg {
+    padding: 16px 28px;
 }
 
 .navbar.navbar-default.navbar-fixed-top {
@@ -103,6 +124,22 @@ section.opposite .separator::after {
     background-color: white;
 }
 
+#portfolio img {
+    margin-bottom: 30px;
+    max-width: 400px;
+    width: 100%;
+}
+
+#about button  {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    #portfolio img {
+        max-width: 100%;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .navbar-default .navbar-brand {
         font-size: 22px;
@@ -120,4 +157,7 @@ section.opposite .separator::after {
         font-size: 24px;
     }
 
+    h2 {
+        font-size: 48px;
+    }
 }
